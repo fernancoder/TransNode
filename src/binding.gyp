@@ -1,0 +1,87 @@
+{
+  "targets": [
+    {
+      "target_name": "trans-node",
+      "sources": [
+	"transNode.cpp",
+	"bulkID3/id3_tag_frame.cpp",
+	"bulkID3/id3_tag.cpp",
+	"bulkID3/id3_util.cpp",
+	"bulkID3/linked_list.cpp",
+	"bulkID3/mp3.cpp",
+	"bulkID3/util.cpp",
+	"bulkID3/xmalloc.cpp",
+	"libtransmission/announcer.c",
+	"libtransmission/announcer-http.c",
+	"libtransmission/announcer-udp.c",
+	"libtransmission/bandwidth.c",
+	"libtransmission/bencode.c",
+	"libtransmission/bitfield.c",
+	"libtransmission/blocklist.c",
+	"libtransmission/cache.c",
+	"libtransmission/clients.c",
+        "libtransmission/completion.c",
+        "libtransmission/ConvertUTF.c",
+        "libtransmission/crypto.c",
+        "libtransmission/fdlimit.c",
+        "libtransmission/handshake.c",
+        "libtransmission/history.c",
+        "libtransmission/inout.c",
+        "libtransmission/json.c",
+        "libtransmission/jsonsl.c",
+        "libtransmission/list.c",
+        "libtransmission/magnet.c",
+        "libtransmission/makemeta.c",
+        "libtransmission/metainfo.c",
+        "libtransmission/natpmp.c",
+        "libtransmission/net.c",
+        "libtransmission/peer-io.c",
+        "libtransmission/peer-mgr.c",
+        "libtransmission/peer-msgs.c",
+        "libtransmission/platform.c",
+        "libtransmission/port-forwarding.c",
+        "libtransmission/ptrarray.c",
+        "libtransmission/resume.c",
+        "libtransmission/rpcimpl.c",
+        "libtransmission/rpc-server.c",
+        "libtransmission/session.c",
+        "libtransmission/stats.c",
+        "libtransmission/torrent.c",
+        "libtransmission/torrent-ctor.c",
+        "libtransmission/torrent-magnet.c",
+        "libtransmission/tr-dht.c",
+        "libtransmission/trevent.c",
+        "libtransmission/tr-lpd.c",
+        "libtransmission/tr-udp.c",
+        "libtransmission/tr-utp.c",
+        "libtransmission/upnp.c",
+        "libtransmission/utils.c",
+        "libtransmission/verify.c",
+        "libtransmission/web.c",
+        "libtransmission/webseed.c",
+        "libtransmission/wildmat.c",
+	"transmissionDaemon/watch.cpp",
+	"PathsManager.cpp",
+	"FrameExtractor.cpp",
+	"TorrentCreator.cpp",
+        "TransSession.cpp",
+	"Utils.cpp"
+      ],
+      "conditions": [
+      ],
+      "link_settings": {
+        "libraries": [
+          "-lcrypto",
+          "-lcurl",
+          "-levent",
+	  "-ldht",
+          "-lnatpmp",
+          "-lminiupnp"
+        ]
+      },
+      "include_dirs": [
+        "/usr/local/include"
+      ]
+    }
+  ]
+}
