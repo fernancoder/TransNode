@@ -1,0 +1,29 @@
+{
+  "name": "TransNode",
+  "version": "0.1.0",
+  "main": "build/Release/WebWorkerThreads.node",
+  "description": "Lightweight Web Worker API implementation with native threads",
+  "keywords": [
+    "threads",
+    "transmission",
+    "torrent"
+  ],
+  "author": {
+    "name": "Fernando Martín",
+    "email": "fernancoder@gmail.com",
+    "twitter": "fernancoder"
+  },
+  "homepage": "https://github.com/fernancoder/TransNode",
+  "bugs": {
+    "url": "https://github.com/fernancoder/TransNode/issues",
+    "email": "fernancoder@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/fernancoder/TransNode.git"
+  },
+  "gypfile": true,
+  "engines": {
+    "node": ">= 0.8.0"
+  }
+}

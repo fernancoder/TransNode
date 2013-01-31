@@ -127,7 +127,8 @@ void afterMp3ToTorrentImpl(Baton *baton)
 	responseInfo->Set(String::NewSymbol("pieceSize"), Integer::New(baton->pieceSize));
 
 	const unsigned argc = 1;
-	Local<Value> argv[argc] = responseInfo;
+	Local<Value> argv[argc];
+	argv[argc] = responseInfo;
 //ESPECIFICO *********
 
 	TryCatch try_catch;
@@ -266,7 +267,8 @@ void afterSessionImpl(Baton *baton)
 	}
 
 	const unsigned argc = 1;
-	Local<Value> argv[argc] = responseInfo;
+	Local<Value> argv[argc];
+	argv[0] = responseInfo;
 //ESPECIFICO *********
 
 	TryCatch try_catch;
@@ -390,7 +392,8 @@ void afterAddImpl(Baton *baton)
 	responseInfo->Set(String::NewSymbol("linkType"), Integer::New(baton->nodeTorrentLinkType));
 
 	const unsigned argc = 1;
-	Local<Value> argv[argc] = responseInfo;
+	Local<Value> argv[argc];
+	argv[0] = responseInfo;
 //ESPECIFICO *********
 
 	TryCatch try_catch;
@@ -507,7 +510,8 @@ void afterListImpl(Baton *baton)
 	responseInfo->Set(String::NewSymbol("torrents"), arrayToSend);
 
 	const unsigned argc = 1;
-	Local<Value> argv[argc] = responseInfo;
+	Local<Value> argv[argc];
+	argv[0] = responseInfo;
 //ESPECIFICO *********
 
 	TryCatch try_catch;
@@ -579,7 +583,8 @@ void afterStartImpl(Baton *baton)
 	responseInfo->Set(String::NewSymbol("errorStatus"), Integer::New(baton->errorStatus));
 
 	const unsigned argc = 1;
-	Local<Value> argv[argc] = responseInfo;
+	Local<Value> argv[argc];
+	argv[0] = responseInfo;
 //ESPECIFICO *********
 
 	TryCatch try_catch;
@@ -653,7 +658,8 @@ void afterStopImpl(Baton *baton)
 	responseInfo->Set(String::NewSymbol("errorStatus"), Integer::New(baton->errorStatus));
 
 	const unsigned argc = 1;
-	Local<Value> argv[argc] = responseInfo;
+	Local<Value> argv[argc];
+	argv[0] = responseInfo;
 //ESPECIFICO *********
 
 	TryCatch try_catch;
@@ -727,7 +733,8 @@ void afterRemoveImpl(Baton *baton)
 	responseInfo->Set(String::NewSymbol("errorStatus"), Integer::New(baton->errorStatus));
 
 	const unsigned argc = 1;
-	Local<Value> argv[argc] = responseInfo;
+	Local<Value> argv[argc];
+	argv[0] = responseInfo;
 //ESPECIFICO *********
 
 	TryCatch try_catch;

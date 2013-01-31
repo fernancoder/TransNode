@@ -123,7 +123,7 @@ char* convert_to_utf_8( enum Encoding encoding, char* string_buffer, size_t str_
 	//
 		iconv_t conv = iconv_open( "UTF-8", src_encoding );
 
-		if( conv == (conv)-1 )
+		if( conv == (iconv_t) -1 )
 		{
 			print_message( "iconv_open() failed.", ERROR, true );
 			return NULL;
