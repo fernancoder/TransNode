@@ -65,7 +65,22 @@
         "src/FrameExtractor.cpp",
         "src/TorrentCreator.cpp",
         "src/TransSession.cpp",
-        "src/Utils.cpp"
+        "src/Utils.cpp",
+        "third-party/dht/dht.c",
+        "third-party/libnatpmp/natpmp.c",
+        "third-party/libnatpmp/wingettimeofday.c",
+        "third-party/libnatpmp/getgateway.c",
+        "third-party/miniupnp/connecthostport.c",
+        "third-party/miniupnp/igd_desc_parse.c",
+        "third-party/miniupnp/minisoap.c",
+        "third-party/miniupnp/minissdpc.c",
+        "third-party/miniupnp/miniupnpc.c",
+        "third-party/miniupnp/miniwget.c",
+        "third-party/miniupnp/minixml.c",
+        "third-party/miniupnp/portlistingparse.c",
+        "third-party/miniupnp/receivedata.c",
+        "third-party/miniupnp/upnpcommands.c",
+        "third-party/miniupnp/upnpreplyparse.c"
       ],
       "conditions": [
       ],
