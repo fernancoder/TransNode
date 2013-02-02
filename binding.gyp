@@ -67,6 +67,8 @@
         "src/TransSession.cpp",
         "src/Utils.cpp",
         "third-party/dht/dht.c",
+        "third-party/libutp/utp.cpp",
+        "third-party/libutp/utp_utils.cpp",
         "third-party/libnatpmp/natpmp.c",
         "third-party/libnatpmp/wingettimeofday.c",
         "third-party/libnatpmp/getgateway.c",
@@ -82,7 +84,9 @@
         "third-party/miniupnp/upnpcommands.c",
         "third-party/miniupnp/upnpreplyparse.c"
       ],
-      "conditions": [
+      "defines": [
+        "POSIX",
+        "WITH_UTP"
       ],
       "link_settings": {
         "libraries": [
@@ -94,6 +98,8 @@
       "include_dirs": [
         "/usr/local/include",
         "third-party/libnatpmp",
+        "third-party/libutp",
+        "third-party/libutp/utp_config_lib",
         "third-party"
       ]
     }
