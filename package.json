@@ -1,7 +1,7 @@
 {
   "name": "TransNode",
   "version": "0.1.0",
-  "main": "build/Release/WebWorkerThreads.node",
+  "main": "build/Release/TransNode.node",
   "description": "Lightweight Web Worker API implementation with native threads",
   "keywords": [
     "threads",

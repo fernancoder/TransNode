@@ -3,6 +3,95 @@ TransNode
 
 node.js C++ torrent module based on libstransmission (without RPC)
 
+this library in process of change...
+ * not yet compatible with node 0.10.x
+ * examples do not yet exist (to show off its power)
+ * I want to change over to (err, res) callback format
+
+## API
+
+### open
+`open(<String> config_dir_path, <Function> callback)`
+
+ * `config_dir_path` is a path to a directory on the local disk in which all of transmission's configuration will be saved (used for reloading sessions and the like)
+
+```
+callback(obj)
+{
+	errorStatus: <Integer>
+}
+```
+
+### add
+`add(<String> path, <Function> callback)`
+
+ * `path` can be a string with a magnet url, a local file, or an http link
+
+```
+callback(obj)
+{
+	errorStatus: <Integer>
+	linkType: <Integer>
+}
+```
+
+
+### list
+`list(<Function> callback)`
+
+
+### start
+`start(<Integer> TorrentId, <Function> callback)`
+```
+callback(obj)
+{
+	errorStatus: <Integer>
+}
+```
+
+### stop
+`stop(<Integer> TorrentId, <Function> callback)`
+```
+callback(obj)
+{
+	errorStatus: <Integer>
+}
+```
+
+### remove
+`remove(<Integer> TorrentId, <Boolean> delete_local_data, <Function> callback)`
+```
+callback(obj)
+{
+	errorStatus: <Integer>
+}
+```
+
+
+### mp3ToTorrent
+`mp3ToTorrent(<String> mp3_path, <Object> options, <Function> callback)`
+
+this function takes an MP3 file as an argument, with options:
+```
+options = {
+	uframeDirectory: <String>
+	torrentDirectory: <String>
+	pieceSize: <Integer>
+}
+```
+
+```
+callback(obj)
+{
+	errorStatus: <Integer>
+	orgFilePath: <String>
+	uframeHash: <String>
+	uframeFilePath: <String>
+	torrentFilePath: <String>
+	pieceSize: <Integer>
+}
+```
+
 ## License
 
 (The MIT License)

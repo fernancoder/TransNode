@@ -1,7 +1,7 @@
 {
   "targets": [
     {
-      "target_name": "trans-node",
+      "target_name": "TransNode",
       "sources": [
         "src/transNode.cpp",
         "src/bulkID3/id3_tag_frame.cpp",
