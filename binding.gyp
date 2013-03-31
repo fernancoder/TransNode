@@ -86,7 +86,8 @@
       ],
       "defines": [
         "POSIX",
-        "WITH_UTP"
+        "WITH_UTP",
+        "ENABLE_STRNATPMPERR"
       ],
       "link_settings": {
         "libraries": [
