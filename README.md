@@ -8,6 +8,12 @@ this library in process of change...
  * examples do not yet exist (to show off its power)
  * I want to change over to (err, res) callback format
 
+## install
+
+  sudo apt-get install libcurl4-openssl-dev libevent-dev
+  npm install
+  node example/test.js
+
 ## API
 
 ### open
